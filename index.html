@@ -1,1 +1,377 @@
-hgghfygghy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>QARIZ WEB SOLUTIONS</title>
+  
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Font Oswald -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: 'Oswald', sans-serif;
+      background:#02041B;
+      color:white;
+    }
+    .div1 {
+      background-image:url("/1732111137978.jpg"
+    );
+    background-size:100px;
+      color: #CB09D0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      height:100px;
+      
+    }
+    .div1>background-img{
+      height:300px;
+      width:2000px;
+    }
+    h4 {
+      margin: 0;
+      
+      padding: 10px; /* You can adjust the padding value if needed */
+      font-size: 20px; /* Adjust font size to match icons */
+    }
+    .icon-container {
+      display: flex;
+      gap: 10px;
+      align-it:ems: center; /* Align items vertically */
+    }
+    .icon, .menu-icon {
+      font-size: 20px;
+      cursor: pointer;
+      color: white; /* Set all icons to white */
+    }
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 16px;
+      margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+    .div2 >img {
+      height:650px;
+      width:360px;
+      
+    }
+    .div3{
+      height:250px;
+      width:356px;
+      border:1px solid #0817BDE0;
+      text-align:center;
+      margin-left:0px;
+      border-radius:2px;
+      font-size:10px;
+    }
+    .div3 >p{
+      font-size:17px;
+      color:#D0D0EE;
+    }
+    .div4{
+      height:250px;
+      width:352px;
+      text-align:center;
+      margin-left:3px;
+      border-radius:2px;
+    }
+    .div4>img{
+      width:356px;
+      margin-top:7px;
+      height:300;
+      
+    }
+    
+    .div5{
+      height:500px;
+      width:352px;
+      border:1px solid #0817BDE0;
+      text-align:center;
+      margin-left:3px;
+      border-radius:2px;
+      font-size:14px;
+    }
+    .div5 >h4{
+      font-style:14px;
+    }
+    .div6{
+      height:300px;
+      width:354px;
+      border:1px solid #0817BDE0;
+      text-align:center;
+      margin-left:3px;
+      border-radius:2px;
+      overflow-x: scroll;
+     font-size:1px;
+    }
+       .div6>img{
+         width:356px;
+         height:100px;
+         margin-top:10px;
+       }
+
+       }
+    .div10{
+      
+      width:100px;
+      border:1px solid #4550C7E0;
+      height:460px;
+      margin-top:10px;
+      font-size:17px;
+      margin-left:1px;
+    }
+    .div11{
+      width:330px;
+      border:1px solid #4550C7E0;
+      height:150px;
+      margin-top:10px;
+      font-size:17px;
+      margin-left:10px;
+    }
+    p{
+      color:#D0D0EE;
+    }
+    .social-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.2s ease-in-out;
+    float:left;
+    margin-top:50px;
+}
+
+.social-button:hover {
+    transform: scale(1.1);
+}
+
+.social-button img {
+    width: 24px;
+    height: 24px;
+}
+ h6{
+  background:#1322C62E;
+  font-size:17px;
+  margin-top:1px;
+  margin-left:1px;
+  width:357px;
+}
+        /* Container for the image slider */
+        .slider {
+            position: relative;
+            width: 98%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            border: 0px solid #ddd;
+        }
+
+        /* Container for the slides */
+        .slides {
+            display: flex;
+            transition: transform 6.5s ease-in-out;
+        }
+
+        /* Individual slide images */
+        .slides img {
+            width: 100%;
+            flex-shrink: 0;
+            height:400px;
+        }
+
+        /* Navigation buttons */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+        .div15{
+          position: 
+          margin-top:220px;
+          padding:0px;
+        }
+        .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp-button img {
+    margin-right: 10px;
+}
+  </style>
+</head>
+<body>
+  <div class="div1">
+    <div class="icon-container">
+      <span class="menu-icon" onclick="openNav()">&#9776;</span> <!-- Navigation bar icon on the left -->&nbsp;&nbsp;&nbsp;
+      <i class="fas fa-heart icon"></i> <!-- Love icon -->
+    </div>
+    <h4>OLE FUNITURE</h4>
+    <div class="icon-container">
+      <i class="fas fa-shopping-bag re icon"></i>&nbsp;&nbsp;&nbsp;
+      <i class="fab fa-whatsapp icon"></i>
+    </div>
+  </div>
+   <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="24" height="24">
+        Chat with us
+    </a>
+<h5 style="margin-top:0px;text-align:center; background:yellow;color:black; ">WRAP YOURSELF IN LUXURY</h5>
+<div class="slider">
+    <div class="slides">
+        <img src="/IMG_20250215_121948.jpg" alt="Image 1">
+        
+        <img src="/IMG_20250215_121043.jpg" alt="Image 3">
+        <img src="/1739680060181.jpg" alt="Image 4">
+        <img src="/IMG_20250215_120842.jpg" alt="Image 5">
+        <img src="/IMG_20250215_121043.jpg" alt="Image 1">  
+        <img src="/1739675349314.jpg" alt="Image 6">""
+        <img src="/1739675343289.jpg" alt="Image 7">
+        
+    </div>
+    </div>
+
+<h4 style="text-align:center">ABOUT US</h4>
+<div class="div3"><p> </p></div>
+
+</div>
+
+
+</h6></div></div>
+
+
+<hr style="margin-top:50px"/>
+<h4 style="text-align:center">CONTACT US</h4>
+<div class="social-buttons">
+    <a href="https://facebook.com" class="social-button"><img src="/5296499_fb_facebook_facebook logo_icon.png" alt="Facebook"></a>
+    <a href="https://instagram.com" class="social-button"><img src="/4202090_instagram_logo_social_social media_icon.png" alt="Instagram"></a>
+    <a href="https://wa.me/+254703397753" class="social-button"><img src="/4017334_circle_logo_media_network_social_icon.png" alt="WhatsApp"></a>
+    
+    
+</div>
+</br>
+<h5 style="text-align:center;margin-bottom:0px">COPYRIGHT © 2025</h5>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <script>
+  
+
+        let currentSlide = 0;
+    const slides = document.querySelectorAll('.slides img');
+    const totalSlides = slides.length;
+    const slider = document.querySelector('.slides');
+
+    function changeSlide(direction) {
+        if (direction === 1 && currentSlide === totalSlides - 2) {
+            currentSlide = -1; // Prepare to reset to the first image
+        }
+        currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+        slider.style.transition = 'transform 0.5s ease-in-out';
+        slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+        if (direction === 1 && currentSlide === -1) {
+            setTimeout(() => {
+                slider.style.transition = 'none';
+                slider.style.transform = `translateX(0)`;
+                currentSlide = 0;
+            }, 500); // Match the transition duration
+        }
+    }
+
+    function autoSlide() {
+        changeSlide(1);
+        setTimeout(autoSlide, 7000); // Change image every 3 seconds
+    }
+
+    autoSlide();
+    
+function openNav() {
+  document.getElementById("mySidenav").style.width = "150px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+  </script>
+</body>
+</html>
+
+
