@@ -1,377 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>QARIZ WEB SOLUTIONS</title>
-  
-  <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- Google Font Oswald -->
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      font-family: 'Oswald', sans-serif;
-      background:#02041B;
-      color:white;
-    }
-    .div1 {
-      background-image:url("/1732111137978.jpg"
-    );
-    background-size:100px;
-      color: #CB09D0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      height:100px;
-      
-    }
-    .div1>background-img{
-      height:300px;
-      width:2000px;
-    }
-    h4 {
-      margin: 0;
-      
-      padding: 10px; /* You can adjust the padding value if needed */
-      font-size: 20px; /* Adjust font size to match icons */
-    }
-    .icon-container {
-      display: flex;
-      gap: 10px;
-      align-it:ems: center; /* Align items vertically */
-    }
-    .icon, .menu-icon {
-      font-size: 20px;
-      cursor: pointer;
-      color: white; /* Set all icons to white */
-    }
-    .sidenav {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: #111;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 60px;
-    }
-
-    .sidenav a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
-    }
-
-    .sidenav a:hover {
-      color: #f1f1f1;
-    }
-
-    .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 16px;
-      margin-left: 50px;
-    }
-
-    @media screen and (max-height: 450px) {
-      .sidenav {padding-top: 15px;}
-      .sidenav a {font-size: 18px;}
-    }
-    .div2 >img {
-      height:650px;
-      width:360px;
-      
-    }
-    .div3{
-      height:250px;
-      width:356px;
-      border:1px solid #0817BDE0;
-      text-align:center;
-      margin-left:0px;
-      border-radius:2px;
-      font-size:10px;
-    }
-    .div3 >p{
-      font-size:17px;
-      color:#D0D0EE;
-    }
-    .div4{
-      height:250px;
-      width:352px;
-      text-align:center;
-      margin-left:3px;
-      border-radius:2px;
-    }
-    .div4>img{
-      width:356px;
-      margin-top:7px;
-      height:300;
-      
-    }
-    
-    .div5{
-      height:500px;
-      width:352px;
-      border:1px solid #0817BDE0;
-      text-align:center;
-      margin-left:3px;
-      border-radius:2px;
-      font-size:14px;
-    }
-    .div5 >h4{
-      font-style:14px;
-    }
-    .div6{
-      height:300px;
-      width:354px;
-      border:1px solid #0817BDE0;
-      text-align:center;
-      margin-left:3px;
-      border-radius:2px;
-      overflow-x: scroll;
-     font-size:1px;
-    }
-       .div6>img{
-         width:356px;
-         height:100px;
-         margin-top:10px;
-       }
-
-       }
-    .div10{
-      
-      width:100px;
-      border:1px solid #4550C7E0;
-      height:460px;
-      margin-top:10px;
-      font-size:17px;
-      margin-left:1px;
-    }
-    .div11{
-      width:330px;
-      border:1px solid #4550C7E0;
-      height:150px;
-      margin-top:10px;
-      font-size:17px;
-      margin-left:10px;
-    }
-    p{
-      color:#D0D0EE;
-    }
-    .social-button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f0f0f0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    transition: transform 0.2s ease-in-out;
-    float:left;
-    margin-top:50px;
-}
-
-.social-button:hover {
-    transform: scale(1.1);
-}
-
-.social-button img {
-    width: 24px;
-    height: 24px;
-}
- h6{
-  background:#1322C62E;
-  font-size:17px;
-  margin-top:1px;
-  margin-left:1px;
-  width:357px;
-}
-        /* Container for the image slider */
-        .slider {
-            position: relative;
-            width: 98%;
-            max-width: 600px;
-            margin: auto;
-            overflow: hidden;
-            border: 0px solid #ddd;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your eFootball Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
-        /* Container for the slides */
-        .slides {
+        
+        body {
+            background: linear-gradient(135deg, #0c1a2d 0%, #1a3a5f 100%);
+            color: #fff;
+            min-height: 100vh;
             display: flex;
-            transition: transform 6.5s ease-in-out;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            overflow-x: hidden;
         }
-
-        /* Individual slide images */
-        .slides img {
+        
+        .container {
+            max-width: 800px;
             width: 100%;
-            flex-shrink: 0;
-            height:400px;
+            text-align: center;
+            padding: 30px;
+            background: rgba(10, 25, 47, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
         }
-
-        /* Navigation buttons */
-        .prev, .next {
+        
+        .container::before {
+            content: '';
             position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            z-index: -1;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #ffd700, #ff8c00);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #a0c8ff;
+        }
+        
+        .profile-card {
+            background: rgba(20, 40, 70, 0.7);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .avatar {
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            border: 3px solid #ffd700;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
         }
-
-        .prev {
-            left: 10px;
+        
+        .avatar i {
+            font-size: 50px;
+            color: #ffd700;
         }
-
-        .next {
-            right: 10px;
+        
+        .player-name {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #fff;
         }
-        .div15{
-          position: 
-          margin-top:220px;
-          padding:0px;
+        
+        .player-level {
+            font-size: 1.1rem;
+            color: #ffd700;
+            margin-bottom: 5px;
         }
-        .whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366;
-    color: white;
-    border-radius: 50px;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 15px;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-}
-
-.whatsapp-button img {
-    margin-right: 10px;
-}
-  </style>
+        
+        .player-stats {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffd700;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: #a0c8ff;
+        }
+        
+        .cta-button {
+            background: linear-gradient(90deg, #ff8c00, #ffd700);
+            color: #0c1a2d;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 140, 0, 0.6);
+        }
+        
+        .cta-button:active {
+            transform: translateY(1px);
+        }
+        
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .feature {
+            flex: 1;
+            min-width: 150px;
+            margin: 10px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .feature i {
+            font-size: 2rem;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+        
+        .feature-title {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+        
+        .feature-desc {
+            font-size: 0.8rem;
+            color: #a0c8ff;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #6c8cb5;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .player-stats {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .features {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <div class="div1">
-    <div class="icon-container">
-      <span class="menu-icon" onclick="openNav()">&#9776;</span> <!-- Navigation bar icon on the left -->&nbsp;&nbsp;&nbsp;
-      <i class="fas fa-heart icon"></i> <!-- Love icon -->
-    </div>
-    <h4>OLE FUNITURE</h4>
-    <div class="icon-container">
-      <i class="fas fa-shopping-bag re icon"></i>&nbsp;&nbsp;&nbsp;
-      <i class="fab fa-whatsapp icon"></i>
-    </div>
-  </div>
-   <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="24" height="24">
-        Chat with us
-    </a>
-<h5 style="margin-top:0px;text-align:center; background:yellow;color:black; ">WRAP YOURSELF IN LUXURY</h5>
-<div class="slider">
-    <div class="slides">
-        <img src="/IMG_20250215_121948.jpg" alt="Image 1">
+    <div class="container">
+        <h1>YOUR eFOOTBALL PROFILE</h1>
+        <p class="subtitle">Check your stats, achievements, and compete with friends</p>
         
-        <img src="/IMG_20250215_121043.jpg" alt="Image 3">
-        <img src="/1739680060181.jpg" alt="Image 4">
-        <img src="/IMG_20250215_120842.jpg" alt="Image 5">
-        <img src="/IMG_20250215_121043.jpg" alt="Image 1">  
-        <img src="/1739675349314.jpg" alt="Image 6">""
-        <img src="/1739675343289.jpg" alt="Image 7">
+        <div class="profile-card">
+            <div class="avatar">
+                <i class="fas fa-user"></i>
+            </div>
+            <h2 class="player-name">Player Name</h2>
+            <p class="player-level">Level 42 • Division 3</p>
+            
+            <div class="player-stats">
+                <div class="stat">
+                    <div class="stat-value">87%</div>
+                    <div class="stat-label">Win Rate</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">342</div>
+                    <div class="stat-label">Matches</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">1,250</div>
+                    <div class="stat-label">Goals</div>
+                </div>
+            </div>
+        </div>
         
+        <button class="cta-button">
+            <i class="fas fa-arrow-right"></i> VIEW YOUR PROFILE
+        </button>
+        
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-chart-line"></i>
+                <div class="feature-title">Track Progress</div>
+                <div class="feature-desc">Monitor your performance over time</div>
+            </div>
+            <div class="feature">
+                <i class="fas fa-trophy"></i>
+                <div class="feature-title">Achievements</div>
+                <div class="feature-desc">Unlock badges and rewards</div>
+            </div>
+            <div class="feature">
+                <i class="fas fa-users"></i>
+                <div class="feature-title">Compare</div>
+                <div class="feature-desc">See how you stack up against friends</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>eFootball™ &copy; 2023 Konami Digital Entertainment</p>
+        </div>
     </div>
-    </div>
 
-<h4 style="text-align:center">ABOUT US</h4>
-<div class="div3"><p> </p></div>
-
-</div>
-
-
-</h6></div></div>
-
-
-<hr style="margin-top:50px"/>
-<h4 style="text-align:center">CONTACT US</h4>
-<div class="social-buttons">
-    <a href="https://facebook.com" class="social-button"><img src="/5296499_fb_facebook_facebook logo_icon.png" alt="Facebook"></a>
-    <a href="https://instagram.com" class="social-button"><img src="/4202090_instagram_logo_social_social media_icon.png" alt="Instagram"></a>
-    <a href="https://wa.me/+254703397753" class="social-button"><img src="/4017334_circle_logo_media_network_social_icon.png" alt="WhatsApp"></a>
-    
-    
-</div>
-</br>
-<h5 style="text-align:center;margin-bottom:0px">COPYRIGHT © 2025</h5>
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Home</a>
-    <a href="#">Services</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </div>
-
-  <script>
-  
-
-        let currentSlide = 0;
-    const slides = document.querySelectorAll('.slides img');
-    const totalSlides = slides.length;
-    const slider = document.querySelector('.slides');
-
-    function changeSlide(direction) {
-        if (direction === 1 && currentSlide === totalSlides - 2) {
-            currentSlide = -1; // Prepare to reset to the first image
-        }
-        currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
-        slider.style.transition = 'transform 0.5s ease-in-out';
-        slider.style.transform = `translateX(-${currentSlide * 100}%)`;
-
-        if (direction === 1 && currentSlide === -1) {
+    <script>
+        document.querySelector('.cta-button').addEventListener('click', function() {
+            // Animation effect
+            this.style.transform = 'scale(0.95)';
             setTimeout(() => {
-                slider.style.transition = 'none';
-                slider.style.transform = `translateX(0)`;
-                currentSlide = 0;
-            }, 500); // Match the transition duration
-        }
-    }
-
-    function autoSlide() {
-        changeSlide(1);
-        setTimeout(autoSlide, 7000); // Change image every 3 seconds
-    }
-
-    autoSlide();
-    
-function openNav() {
-  document.getElementById("mySidenav").style.width = "150px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-
-  </script>
+                this.style.transform = 'scale(1)';
+            }, 150);
+            
+            // In a real implementation, this would redirect to the user's profile
+            alert('Redirecting to your eFootball profile...');
+        });
+        
+        // Add some dynamic elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const stats = document.querySelectorAll('.stat-value');
+            stats.forEach(stat => {
+                const originalValue = stat.textContent;
+                stat.textContent = '0';
+                
+                let counter = 0;
+                const target = parseInt(originalValue.replace(/,/g, ''));
+                const increment = target / 50;
+                
+                const updateCounter = () => {
+                    if (counter < target) {
+                        counter += increment;
+                        stat.textContent = Math.ceil(counter).toLocaleString();
+                        setTimeout(updateCounter, 30);
+                    } else {
+                        stat.textContent = originalValue;
+                    }
+                };
+                
+                setTimeout(updateCounter, 500);
+            });
+        });
+    </script>
 </body>
 </html>
-
-
