@@ -641,4 +641,9 @@
         // Close mobile menu when clicking on a link
         document.querySelectorAll('.mobile-nav a').forEach(link => {
             link.addEventListener('click', () => {
-                document.querySelector('.mobil        
+                document.querySelector('.mobile-nav').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
