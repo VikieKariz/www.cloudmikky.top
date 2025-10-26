@@ -727,5 +727,291 @@
         }
         
         .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+            
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--accent);
+        }
+        
+        /* Transactions Section */
+        .transactions {
+            padding: 2rem 0;
+            background: var(--primary);
+        }
+        
+        .transaction-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+            backdrop-filter: blur(5px);
+        }
+        
+        .transaction-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .transaction-step {
+            text-align: center;
+            padding: 1.2rem;
+            background: rgba(0, 243, 255, 0.05);
+            border-radius: 8px;
+            border: 1px solid rgba(0, 243, 255, 0.2);
+        }
+        
+        .step-icon {
+            font-size: 1.8rem;
+            margin-bottom: 0.8rem;
+            color: var(--accent);
+        }
+        
+        .step-title {
+            font-size: 1.1rem;
+            margin-bottom: 0.4rem;
+            color: var(--accent);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            padding: 1.5rem 0 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.2rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            gap: 1.2rem;
+            list-style: none;
+        }
+        
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.85rem;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 0.8rem;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--text-secondary);
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+        
+        .social-links a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 1.2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 968px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                order: -1;
+            }
+            
+            .header-content {
+                flex-wrap: wrap;
+            }
+            
+            nav ul {
+                order: 3;
+                width: 100%;
+                justify-content: center;
+                margin-top: 1rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 250px;
+            }
+            
+            .slide {
+                padding: 1rem;
+                flex-direction: column;
+                text-align: center;
+                height: auto;
+            }
+            
+            .slide-icon {
+                margin-right: 0;
+                margin-bottom: 0.8rem;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                gap: 1.2rem;
+                text-align: center;
+            }
+            
+            .footer-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .notification-slider {
+                height: auto;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .matches-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .transaction-steps {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .rules-grid, .features-grid, .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">EC</div>
+                <div class="logo-text gaming-font">eFootball Cloud</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Head-to-Head</a></li>
+                    <li><a href="#">Friday Finals</a></li>
+                    <li><a href="#">Leaderboard</a></li>
+                    <li><a href="#">My Wallet</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <button class="btn btn-outline">Login</button>
+                <button class="btn btn-primary">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="gaming-font">COMPETE FOR <span style="background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> LEGACY</span></h1>
+            <p>Challenge players in head-to-head matches or compete in our Friday Finals tournament for huge cash prizes.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Find an Opponent</button>
+                <button class="btn btn-friday">Join Friday Finals</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notification Slider -->
+    <div class="container">
+        <div class="notification-slider">
+            <div class="slider-container" id="slider">
+                <div class="slide">
+                    <div class="slide-icon">🏆</div>
+                    <div class="slide-content">
+                        <h3>Friday Finals Registration Closing Soon!</h3>
+                        <p>Only 12 spots left for this week's $2,500 tournament. Register now to secure your place.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-icon">⚽</div>
+                    <div class="slide-content">
+                        <h3>Player_X defeated Player_Y to win $150</h3>
+                        <p>In a thrilling 3-2 match last night, Player_X claimed victory and the prize money.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-icon">🔄</div>
+                    <div class="slide-content">
+                        <h3>New Feature: Live Match Streaming</h3>
+                        <p>Watch top players compete in real-time with our new live streaming feature.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <div class="slider-dot active" data-slide="0"></div>
+                <div class="slider-dot" data-slide="1"></div>
+                <div class="slider-dot" data-slide="2"></div>
+            </div>
+        </div>
+    </div>
             
       
