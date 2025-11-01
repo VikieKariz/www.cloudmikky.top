@@ -1,0 +1,93 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+#container {
+    display: flex;
+    gap: 40px;
+}
+
+#participants-container, #bracket-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#participants-container {
+    width: 250px;
+}
+
+#bracket-container {
+    flex-grow: 1;
+}
+
+h1, h2, h3 {
+    color: #444;
+}
+
+#participants-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#participants-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#bracket {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-width: 200px;
+}
+
+.match {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.participant {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 180px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.participant.clickable {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.participant.clickable:hover {
+    background-color: #e9e9e9;
+}
+
+.winner {
+    background-color: #d4edda !important;
+    font-weight: bold;
+    border-color: #c3e6cb;
+}
+
+.tbd {
+    color: #999;
+    font-style: italic;
+}
